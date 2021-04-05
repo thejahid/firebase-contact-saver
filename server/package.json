@@ -1,0 +1,32 @@
+{
+  "name": "contact-saver",
+  "version": "1.0.0",
+  "description": " A mern contact saver app by developerjahid.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "server": "nodemon src/app.js",
+    "client": "npm start --prefix ../client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": "https://github.com/developerjahid/contact-saver.git",
+  "author": "Md. Jahid Hasan <jhpabel@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.6",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-jwt": "^6.0.0",
+    "express-validator": "^6.10.0",
+    "firebase-admin": "^9.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.2"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "eslint": "^7.23.0",
+    "nodemon": "^2.0.7"
+  }
+}
